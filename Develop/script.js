@@ -20,6 +20,17 @@ var generatePassword = function () {
    var noChar = "1234567890"
    var spChar = "!'()*+,-./:;<=>?@[\]^_`{|}~" 
 
+//Determine number of characters for password from user input
+var numChar;
+  do {
+    numChar = prompt("How many characters? (8-128)");
+    numChar = parseInt(numChar);//Prompt currently returns a string, we need to cnvert it into an integer  
+  }while(numChar < 8 || numChar > 129);
+
+
+
+   //Need to build string based on selected parameters
+
   
 //   var charSet = "";
 // if (numChar < 8) {
