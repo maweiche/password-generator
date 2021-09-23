@@ -31,8 +31,20 @@ var numChar;
 var loCon = confirm("Would you like to include lower case characters?");
 var upCon = confirm("Would you like to include upper case characters?");
 var noCon = confirm("Would you like to include numerical characters?")
+var spCon = confirm("Would you like to include special characters?")
 
-   //Need to build string based on selected parameters
+//Need to build string based on selected parameters
+var appChar = ""; //Begin variable "Approved Characters" as empty then add to it as parameters return "true"
+if (loCon) appChar += loChar;
+if (upCon) appChar += upChar;
+if (noCon) appChar += noChar;
+if (spCon) appChar += spChar;
+
+//Need to have a random a random character chosen from array of "Approved Characters (appChar)"
+var getRandoChar = function () {
+  var randoIndex = Math.floor(Math.random() appChar.length);
+  return appChar [randoIndex];
+}
 
   
 //   var charSet = "";
@@ -83,6 +95,3 @@ var noCon = confirm("Would you like to include numerical characters?")
 
 
 
-
-// // if (loChar = false)+(upChar = false)+(noChar = false)+(spChar = false){
-// //   alert("You must select one type of character.")
