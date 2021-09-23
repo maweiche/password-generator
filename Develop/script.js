@@ -27,7 +27,10 @@ var numChar;
     numChar = parseInt(numChar);//Prompt currently returns a string, we need to cnvert it into an integer  
   }while(numChar < 8 || numChar > 129);
 
-
+//Password Parameters
+var loCon = confirm("Would you like to include lower case characters?");
+var upCon = confirm("Would you like to include upper case characters?");
+var noCon = confirm("Would you like to include numerical characters?")
 
    //Need to build string based on selected parameters
 
@@ -83,15 +86,3 @@ var numChar;
 
 // // if (loChar = false)+(upChar = false)+(noChar = false)+(spChar = false){
 // //   alert("You must select one type of character.")
-// // }
-// /////////////////////////////
-
-// writePassword();
-
-
-
-// for (var i = 0, n = charset.numChar; i < length; ++i) {
-//   retVal += charset.charAt(Math.floor(Math.random() * n));
-// }
-// return retVal;
-// 
