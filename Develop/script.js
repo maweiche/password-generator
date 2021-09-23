@@ -8,38 +8,79 @@ function writePassword() {
   
   passwordText.value = password;
 
-
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// //////////////////////////////////
-var numChar = prompt("How many characters?", "8");  
-if (numChar < 8) {
-  alert("Number of characters must be greater than 8.")
-}
-if (numChar >128) {
-  alert("Number of characters must be less than 128.")
-}
-if (numChar >7, numChar <129) {
-  var loChar = confirm("Use lowercase letters?")
-  var upChar = confirm("Use upper case letters?")
-  var noChar = confirm("Use numbers as characters?")
-  var spChar = confirm("Use special characters?")
-}
-// if (loChar = false)+(upChar = false)+(noChar = false)+(spChar = false){
-//   alert("You must select one type of character.")
+//Student Code
+var generatePassword = function () {
+   //Define variables
+   var loChar = "abcdefghijklmnopqrstuvwxyz"
+   var upChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+   var noChar = "1234567890"
+   var spChar = "!'()*+,-./:;<=>?@[\]^_`{|}~" 
+
+  
+//   var charSet = "";
+// if (numChar < 8) {
+// {alert("Number of characters must be greater than 8.")}{
+//   return;
 // }
-/////////////////////////////
+// }
+// if (numChar >128) {
+// alert("Number of characters must be less than 128.")}
+// {
+//   return;
+// }
+// }
+// var loCon = confirm("Would you like to include lower case characters?");
 
-Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2)
+// if (loCon = true) {
+// charSet =  loChar 
+// }else {
+// charSet = ""
+// }
 
-function doIt(){
-  prompt('Here is your shiny new password:', 
-      Math.random().toString(36).slice(2) + 
-      Math.random().toString(36).slice(2)
-  );
-}
+// var upCon = confirm("Would you like to include upper case characters?");
 
-doIt();
+// if (upCon = true) {
+// charSet = loChar + upChar
+// }
+
+
+
+
+
+
+
+
+
+
+// //////////////////////////////////
+
+// if (numChar >7, numChar <129) {
+//   var loChar = confirm("Use lowercase letters?")
+//   var upChar = confirm("Use upper case letters?")
+//   var noChar = confirm("Use numbers as characters?")
+//   var spChar = confirm("Use special characters?")
+// }
+
+
+
+
+
+
+// // if (loChar = false)+(upChar = false)+(noChar = false)+(spChar = false){
+// //   alert("You must select one type of character.")
+// // }
+// /////////////////////////////
+
+// writePassword();
+
+
+
+// for (var i = 0, n = charset.numChar; i < length; ++i) {
+//   retVal += charset.charAt(Math.floor(Math.random() * n));
+// }
+// return retVal;
+// 
