@@ -26,6 +26,10 @@ var numChar;
     numChar = prompt("How many characters? (8-128)");
     numChar = parseInt(numChar);//Prompt currently returns a string, we need to cnvert it into an integer  
   }while(numChar < 8 || numChar > 129);
+  if (isNaN(numChar)){
+  alert("Please enter a number.");
+  return;
+}
 
 //Password Parameters
 var loCon = confirm("Would you like to include lower case characters?");
@@ -42,9 +46,11 @@ if (spCon) appChar += spChar;
 
 //Need to have a random a random character chosen from array of "Approved Characters (appChar)"
 var getRandoChar = function () {
-  var randoIndex = Math.floor(Math.random() appChar.length);
+  var randoIndex = Math.floor(Math.random() * appChar.length);
   return appChar [randoIndex];
 }
+
+console.log(getRandoChar());
 
   
 //   var charSet = "";
@@ -72,26 +78,4 @@ var getRandoChar = function () {
 // if (upCon = true) {
 // charSet = loChar + upChar
 // }
-
-
-
-
-
-
-
-
-
-
-// //////////////////////////////////
-
-// if (numChar >7, numChar <129) {
-//   var loChar = confirm("Use lowercase letters?")
-//   var upChar = confirm("Use upper case letters?")
-//   var noChar = confirm("Use numbers as characters?")
-//   var spChar = confirm("Use special characters?")
-// }
-
-
-
-
-
+}
