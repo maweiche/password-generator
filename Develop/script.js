@@ -31,30 +31,30 @@ var generatePassword = function () {                //Create starting function f
 }
 
 //Password Parameters
-var loCon = confirm("Would you like to include lower case characters?");      //Established the password parameters using confirms to return boolean values on whether or not to use a specific type of character
-var upCon = confirm("Would you like to include upper case characters?");
-var noCon = confirm("Would you like to include numerical characters?")
-var spCon = confirm("Would you like to include special characters?")
+  var loCon = confirm("Would you like to include lower case characters?");      //Established the password parameters using confirms to return boolean values on whether or not to use a specific type of character
+  var upCon = confirm("Would you like to include upper case characters?");
+  var noCon = confirm("Would you like to include numerical characters?")
+  var spCon = confirm("Would you like to include special characters?")
 
 //Build a string based on true/false responses from confirms for Password Parameters
-var appChar = ""; 
-if (loCon) appChar += loChar;  //if the variable for the specific character results in true from the confirm then it is added to the string of approved characters (appChar)
-if (upCon) appChar += upChar;
-if (noCon) appChar += noChar;
-if (spCon) appChar += spChar;
+  var appChar = ""; 
+    if (loCon) appChar += loChar;  //if the variable for the specific character results in true from the confirm then it is added to the string of approved characters (appChar)
+    if (upCon) appChar += upChar;
+    if (noCon) appChar += noChar;
+    if (spCon) appChar += spChar;
 
 //Generate a random character from the created string of approved characters (appChar) using a function we are naming getRandoChar
-var getRandoChar = function () {
-  var randoIndex = Math.floor(Math.random() * appChar.length);  //Math.floor/random is used to generate a random whole integer that is then multiplied by the length of approved character string and named it randoIndex
-  return appChar [randoIndex];                                  //the randoIndex is then used as the place selector in the string of approved characters (appChar) 
-}
+  var getRandoChar = function () {
+    var randoIndex = Math.floor(Math.random() * appChar.length);  //Math.floor/random is used to generate a random whole integer that is then multiplied by the length of approved character string and named it randoIndex
+    return appChar [randoIndex];                                  //the randoIndex is then used as the place selector in the string of approved characters (appChar) 
+  }
 
 //*test to see if a ranom character appears in console log*
 // console.log(getRandoChar()); 
 
 //Add a random character to the password using a loop for the length of the numChar
-var password = "";              //password begins blank when loop starts
-for(i=0; i < numChar; i++){     //i is representing the starting place of zero and the loop will run as long as i stay belows the approved number of characters (numChar) and i will increase by 1 everytime the loop runs                
-  password += getRandoChar();   //the password string is added to with random characters pulled from getRandoChar function
-}{return password;}             //lastly returned is the final password generated
+  var password = "";              //password begins blank when loop starts
+    for(i=0; i < numChar; i++){     //i is representing the starting place of zero and the loop will run as long as i stay belows the approved number of characters (numChar) and i will increase by 1 everytime the loop runs                
+    password += getRandoChar();   //the password string is added to with random characters pulled from getRandoChar function
+  }{return password;}             //lastly returned is the final password generated
 }
