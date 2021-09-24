@@ -24,12 +24,11 @@ var generatePassword = function () {                //Create starting function f
   do {
     numChar = prompt("How many characters? (8-128)");       //Prompt requires user to input a string of characters
     numChar = parseInt(numChar);                          //With prompt currently returning a string, we need to cnvert it into an integer  
-  }while(numChar < 8 || numChar >= 129);                   //Utilized a do/while loop to tell the function to only run "while" the stated conditions are met
+  }while(numChar < 8 || numChar >= 129);                   //Utilized a do/while loop to tell the function to only run "while" the stated conditions are met, if a number outside of the range is inputted, then the loop function will reject it until the user inputs an allowed number.
   if(isNaN(numChar)){                                    //Created an alert to activate if theinput to beginning prompt is anything besides a number
   alert("Please enter a number between between 7 and 129.");
-  return ;
-
-} 
+  return "";
+}
 
 //Password Parameters
 var loCon = confirm("Would you like to include lower case characters?");      //Established the password parameters using confirms to return boolean values on whether or not to use a specific type of character
