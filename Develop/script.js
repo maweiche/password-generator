@@ -17,7 +17,7 @@ var generatePassword = function () {                //Create starting function f
    var loChar = "abcdefghijklmnopqrstuvwxyz"        //Create string for all of the characters allowed, seperated into specific variables: lower case, upper case, numbers, and special characters.
    var upChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
    var noChar = "1234567890"
-   var spChar = "!'()*+,-./:;<=>?@[\]^_`{|}~" 
+   var spChar = "`-=[]\\;',./~!@#$%^&*()_+{}|:\"<>?";
 
   //Determine number of characters for password from user input
   var numChar;

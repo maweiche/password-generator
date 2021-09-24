@@ -1,92 +1,36 @@
-# 03 JavaScript: Password Generator
+# Random Password Generator
 
-## Your Task
+The goal of this project was to work off of pre-existing code to complete the build of a Random Password Generator.  When the URL is loaded, the user is presented with a button tied to a click event for generating a password.  Once the button is clicked the user is presented with a prompt and several confirms to determine the length of the password and what type of characters to use.  After the user inputs their answers a random password is presented to them on screen with the parameters they provided.
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+## Built With
 
-## User Story
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Deployed Link
 
-## Acceptance Criteria
+* [See Live Site](https://maweiche.github.io/password-generator/)
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+## Screenshot
 
-## Mock-Up
+![gif of site in action](Assets/passwordgenerator.gif)
 
-The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+## Authors
 
-## Grading Requirements
+* **Matt Weichel** 
 
-This homework is graded based on the following criteria: 
+- [Link to Portfolio Site](https://maweiche.github.io/myportfolio/)
+- [Link to Github](https://github.com/maweiche)
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+## License
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+This project is licensed under the MIT License 
 
-### Deployment: 32%
+## Acknowledgments
 
-* Application deployed at live URL.
+* Hat tip to anyone whose code, libraries, packages, or UI was used  / inspired from
 
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
