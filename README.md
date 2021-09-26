@@ -11,11 +11,11 @@ The goal of this project was to work off of pre-existing code to complete the bu
 
 ## Deployed Link
 
-* [See Live Site](https://maweiche.github.io/password-generator/)
+* [See Live Site](Assets/passwordstillshot.png)
 
 ## Screenshot
 
-![gif of site in action](Assets/passwordgenerator.gif)
+![Screenshot of site](Assets/passwordstillshot.png)
 
 
 ## Authors
